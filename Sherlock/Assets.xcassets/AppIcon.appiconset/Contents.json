@@ -1,48 +1,57 @@
 {
   "images" : [
     {
-      "idiom" : "mac",
       "size" : "16x16",
+      "idiom" : "mac",
+      "filename" : "16-16-2ee3cdfef28432d77968ad64885c3d26-detective.png",
       "scale" : "1x"
     },
     {
-      "idiom" : "mac",
       "size" : "16x16",
+      "idiom" : "mac",
+      "filename" : "32-32-2ee3cdfef28432d77968ad64885c3d26-detective-1.png",
       "scale" : "2x"
     },
     {
-      "idiom" : "mac",
       "size" : "32x32",
+      "idiom" : "mac",
+      "filename" : "32-32-2ee3cdfef28432d77968ad64885c3d26-detective-2.png",
       "scale" : "1x"
     },
     {
-      "idiom" : "mac",
       "size" : "32x32",
+      "idiom" : "mac",
+      "filename" : "64-64-2ee3cdfef28432d77968ad64885c3d26-detective.png",
       "scale" : "2x"
     },
     {
-      "idiom" : "mac",
       "size" : "128x128",
+      "idiom" : "mac",
+      "filename" : "128-128-2ee3cdfef28432d77968ad64885c3d26-detective.png",
       "scale" : "1x"
     },
     {
-      "idiom" : "mac",
       "size" : "128x128",
+      "idiom" : "mac",
+      "filename" : "256-256-2ee3cdfef28432d77968ad64885c3d26-detective.png",
       "scale" : "2x"
     },
     {
-      "idiom" : "mac",
       "size" : "256x256",
+      "idiom" : "mac",
+      "filename" : "256-256-2ee3cdfef28432d77968ad64885c3d26-detective-1.png",
       "scale" : "1x"
     },
     {
-      "idiom" : "mac",
       "size" : "256x256",
+      "idiom" : "mac",
+      "filename" : "2ee3cdfef28432d77968ad64885c3d26-detective.png",
       "scale" : "2x"
     },
     {
-      "idiom" : "mac",
       "size" : "512x512",
+      "idiom" : "mac",
+      "filename" : "2ee3cdfef28432d77968ad64885c3d26-detective-1.png",
       "scale" : "1x"
     },
     {

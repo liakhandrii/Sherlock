@@ -12,7 +12,6 @@ class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -22,6 +21,16 @@ class ViewController: NSViewController {
         }
     }
 
+    @IBAction func showPressed(_ sender: Any) {
+        _ = bash(command: "defaults", arguments: ["write", "com.apple.finder", "AppleShowAllFiles", "TRUE"])
+        _ = bash(command: "killall", arguments: ["Finder"])
+    }
 
+    @IBAction func hideTapped(_ sender: Any) {
+        _ = bash(command: "defaults", arguments: ["write", "com.apple.finder", "AppleShowAllFiles", "FALSE"])
+        _ = bash(command: "killall", arguments: ["Finder"])
+    }
+    
+    
 }
 
