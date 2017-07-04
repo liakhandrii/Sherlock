@@ -9,10 +9,13 @@
 import Cocoa
 
 class ViewController: NSViewController {
+    
+    @IBOutlet weak var comboBox: NSComboBox!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        comboBox.selectItem(at: 0)
     }
 
     override var representedObject: Any? {
@@ -22,15 +25,29 @@ class ViewController: NSViewController {
     }
 
     @IBAction func showPressed(_ sender: Any) {
-        _ = bash(command: "defaults", arguments: ["write", "com.apple.finder", "AppleShowAllFiles", "TRUE"])
-        _ = bash(command: "killall", arguments: ["Finder"])
+        if comboBox.indexOfSelectedItem == 0 {
+            showHiddenFiles(true)
+        } else {
+            showDesktopIcons(true)
+        }
     }
 
     @IBAction func hideTapped(_ sender: Any) {
-        _ = bash(command: "defaults", arguments: ["write", "com.apple.finder", "AppleShowAllFiles", "FALSE"])
-        _ = bash(command: "killall", arguments: ["Finder"])
+        if comboBox.indexOfSelectedItem == 0 {
+            showHiddenFiles(false)
+        } else {
+            showDesktopIcons(false)
+        }
     }
     
-    
+    func showHiddenFiles(_ show: Bool) {
+        _ = bash(command: "defaults", arguments: ["write", "com.apple.finder", "AppleShowAllFiles", "\(show)"])
+        _ = bash(command: "killall", arguments: ["Finder"])
+    }
+
+    func showDesktopIcons(_ show: Bool) {
+        _ = bash(command: "defaults", arguments: ["write", "com.apple.finder", "CreateDesktop", "\(show)"])
+        _ = bash(command: "killall", arguments: ["Finder"])
+    }
 }
 
